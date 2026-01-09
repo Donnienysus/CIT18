@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Contract</title>
+    <style>
+        :root{
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --accent:#2b6cb0;
+      --text:#1a202c;
+      --muted:#6b7280;
+      --radius:10px;
+      --max-w:900px;
+        }
+        *{box-sizing:border-box}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            padding: 28px 16px;
+        }
+        .container{
+      max-width:var(--max-w);
+      margin:0 auto;
+      background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
+      padding:28px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 20px rgba(31,41,55,0.06);
+    }
+      header{
+        text-align:center;
+        margin-bottom:18px;
+      }
+      h1{
+         margin:0 0 6px 0;
+      font-size:clamp(1.4rem, 2.6vw, 2rem);
+      color:var(--accent);
+      letter-spacing:0.2px;
+      }
+       .meta{
+      color:var(--muted);
+      font-size:0.95rem;
+      }
+      section{
+        background:var(--card);
+        padding:18px;
+        margin:14px 0;
+        border-radius:8px;
+        border:1px solid rgba(15,23,42,0.04);
+      }
+      section h2{
+        margin:0 0 8px 0;
+        font-size:1.15rem;
+        color:var(--text);
+      }
+      section p{
+        margin:0;
+        color:var(--text);
+        font-size:1rem;
+      }
+      footer{
+        margin-top:18px;
+        text-align:left;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        gap:12px;
+        flex-wrap: wrap;
+      }
+      .signer{
+        font-weight:600;
+        color:var(--text);
+      }
+      .signature-line{
+        display:inline-block;
+        width:260px;
+        border-bottom:1px solid rgba(15,23,42,0.12);
+        padding-bottom:6px;
+        margin-top:6px;
+      }
+      @media (max-width:560px){
+        .container{padding:18px}
+        section{padding:14px}
+        .signature-line{width:100%}
+        footer{flex-direction: column;align-items: flex-start;}
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>Learning Contract</h1>
+        <div class="meta">Learning Contract for CIT18 | CITCS 3J GROUP A</div>
+      </header>
+      <main>
+        <section>
+            <h2>Expectation</h2>
+             <p>I expect this course to provide clear and practical knowledge that will help my understanding of the course. I also expect the teacher to deliver well-organized lessons, give constructive feedback, and provide a supportive learning environment where we students can feel encouraged to participate.</p>
+        </section>
+        <section>
+            <h2>Motivations</h2>
+            <p>My motivations for the course is to improve my skills and gain experience that will be useful for my future career. I am motivated to learn and apply what I have learned into real-life situations.</p>
+        </section>
+        <section>
+            <h2>Contributions</h2>
+            <p>I can try to participate actively in class, complete required activities on time, and try to work along side with my classmates. I take responsibility for my learning by trying to participate in the discussion and seeking clarification when needed.</p>
+        </section>
+        <section>
+            <h2>Hindrances</h2>
+            <p>I have trouble with time management, especially with added work from other classes, or if I have technical difficulties with my devices or internet connection. I will still make an effort to try planning ahead of time.</p>
+        </section>
+        </main>
+        <footer>
+          <div>
+            <div class="signer">Student Name: Pistola, Aubrey Dominique J. <span class="signature-line"></span></div>
+          </div> 
+</body>
+</html>
