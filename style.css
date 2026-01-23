@@ -1,0 +1,195 @@
+/* RESET & GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* PASTEL ANIMATED HEADER & FOOTER */
+header,
+footer {
+    background: linear-gradient(
+        -45deg,
+        #cdb4db,
+        #ffc8dd,
+        #bde0fe,
+        #a2d2ff
+    );
+    background-size: 400% 400%;
+    animation: pastelGradient 25s ease infinite;
+    color: #ffffff;
+}
+
+/* Animation */
+@keyframes pastelGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Content */
+header {
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #eef1f8;
+}
+
+nav button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #bde0fe;
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #a2d2ff;
+    transform: translateY(-2px);
+}
+
+/* MAIN CONTENT */
+main,
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background-color: #f9f9ff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border-left: 6px solid #cdb4db;
+}
+
+/* CONTACT INFO */
+.contact-info p {
+    margin-bottom: 0.7rem;
+}
+
+.contact-info a {
+    color: #6a7fd1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* PAGE TRANSITIONS */
+.fade-in {
+    animation: fadeIn 0.6s ease-in;
+}
+
+.fade-out {
+    animation: fadeOut 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main,
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+/* SECTION ANIMATION */
+section {
+    opacity: 0;                  /* Initially hidden */
+    transform: translateY(30px); /* Start slightly below */
+    transition: all 0.6s ease;
+}
+
+/* When element is visible */
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+transition: all 0.8s ease-out;
